@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MR MA4HI/info</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#1e1e2f,#3a0ca3);
+}
+
+.phone{
+  width:320px;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(15px);
+  border-radius:30px;
+  padding:20px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.5);
+  text-align:center;
+  color:white;
+}
+
+.profile img{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  border:3px solid #fff;
+}
+
+.profile h2{
+  margin-top:10px;
+  font-weight:700;
+}
+.link{
+  margin-top:15px;
+}
+
+.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  margin:10px 0;
+  padding:12px;
+  border-radius:12px;
+  text-decoration:none;
+  color:white;
+  background:rgba(255,255,255,0.15);
+  transition:0.3s;
+  position:relative;
+  overflow:hidden;
+  font-weight:500;
+}
+
+.btn i{
+  font-size:18px;
+}
+
+/* Hover */
+.btn:hover{
+  transform:scale(1.05);
+  background:rgba(255,255,255,0.25);
+}
+
+/* Ripple */
+.btn::after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:0;
+  background:rgba(255,255,255,0.4);
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  transition:0.5s;
+}
+
+.btn:active::after{
+  width:200px;
+  height:200px;
+}
+
+/* Platform Colors */
+.fb i{ color:#1877f2; }
+.insta i{ color:#e1306c; }
+.tiktok i{ color:#000; }
+.whatsapp i{ color:#25d366; }
+.call i{ color:#00ffcc; }
+
+</style>
+</head>
+
+<body>
+
+<div class="phone">
+
+  <div class="profile">
+    <img src="https://i.ibb.co/4pDNDk1/avatar.png">
+    <h2>MR MA4HI/info </h2>
+  </div>
+
+  <div class="link">
+
+    <a href="https://www.facebook.com/share/1FnSqxjW4i/" class="btn fb">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+
+    <a href="https://www.instagram.com/mrma4h1_909" class="btn insta">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <a href="https://www.tiktok.com/@mrparv4ajkhan909" class="btn tiktok">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+
+    <a href="https://wa.me/8801774020517?text=assalamualaikum" class="btn whatsapp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <a href="tel:01774020517" class="btn call">
+      <i class="fas fa-phone"></i> Call Now
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>

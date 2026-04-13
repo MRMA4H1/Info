@@ -1,0 +1,26 @@
+.phone{
+  width:320px;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(15px);
+  border-radius:30px;
+  padding:20px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.5);
+  text-align:center;
+  color:white;
+
+  /* 👇 ADD THIS */
+  transform: translateX(100%);
+  animation: slideIn 1s ease forwards;
+}
+
+/* Slide Animation */
+@keyframes slideIn{
+  from{
+    transform: translateX(100%);
+    opacity:0;
+  }
+  to{
+    transform: translateX(0);
+    opacity:1;
+  }
+}
